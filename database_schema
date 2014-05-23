@@ -18,3 +18,21 @@ project_name  varchar(100),
 project_description  varchar(500),
 project_create_date  date
 );
+
+
+CREATE TABLE accounts
+(
+user_id int,
+account_name  varchar(45),
+account_vorname  varchar(45),
+account_create_date  date,
+account_profil_image varchar(45),
+password varchar(300),
+group_id int
+);
+
+CREATE TABLE groups
+(
+group_id int,
+group_name varchar(45)
+);
