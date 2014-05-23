@@ -4,8 +4,17 @@ CREATE DATABASE fsr_laborprojekt;
 CREATE TABLE experiment_register
 (
 register_id int,
-title  varchar(100),
-description  varchar(500),
-create_date  date,
-images varchar(500)
+experiment_title  varchar(100),
+experiment_description  varchar(500),
+experiment_create_date  date,
+experiment_images varchar(500),
+project_id int
 )
+
+CREATE TABLE project_registers
+(
+project_id int,
+project_name  varchar(100),
+project_description  varchar(500),
+project_create_date  date
+);
