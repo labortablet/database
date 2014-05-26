@@ -28,11 +28,26 @@ account_vorname  varchar(45),
 account_create_date  date,
 account_profil_image varchar(45),
 password varchar(300),
+account_type int,
+account_email varchar(45),
 group_id int
 );
 
 CREATE TABLE groups
 (
 group_id int,
-group_name varchar(45)
+group_name varchar(45),
+group_description varchar(45),
+group_create_date varchar(45),
+group_project_id int
 );
+
+CREATE TABLE calender
+(
+calender_id int,
+calender_aufgabe_title varchar(45),
+calender_date date,
+calender_time_1 time,
+calender_time_2 time,
+calender_user_id int
+)
