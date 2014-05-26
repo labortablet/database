@@ -1,5 +1,6 @@
 CREATE DATABASE fsr_laborprojekt;
 
+Hallo
 
 CREATE TABLE experiment_register
 (
